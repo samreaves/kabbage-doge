@@ -34,7 +34,7 @@ const temperatureRoute = {
 
           /* If response comes back as expected, round the float and pass to user as current temperature */
           if (response.status === 200 && response.data && response.data.hasOwnProperty('main') && response.data.main.hasOwnProperty('temp') && typeof (response.data.main.temp === 'number')) {
-              reply({temperature: Math.round(response.data.main.temp)});
+              reply({ temperature: Math.round(response.data.main.temp) });
           }
           /* If our response did not come back as expected, throw 500 and point the finger */
           else {
