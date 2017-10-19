@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/samreaves/kabbage-doge#readme",
   "dependencies": {
+    "axios": "0.16.2",
     "hapi": "16.6.2",
-    "inert": "4.2.1"
+    "inert": "4.2.1",
+    "joi": "13.0.0"
   },
   "devDependencies": {
     "ava": "0.22.0"

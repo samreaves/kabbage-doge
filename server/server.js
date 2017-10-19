@@ -24,7 +24,11 @@ server.register({
     throw inertDependencyInjectionError;
   }
 
-  /* Server presentation layer public assets from client folder */
+  /* Import and use API route configuration */
+  const APIRoutes = require('./routes');
+  server.route(APIRoutes);
+
+  /* Serve presentation layer public assets from client folder */
   server.route({
     method: 'GET',
     path: '/{param*}',
