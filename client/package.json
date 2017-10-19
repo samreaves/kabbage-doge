@@ -1,0 +1,41 @@
+{
+  "name": "kabbage-doge-client",
+  "version": "1.0.0",
+  "description": "Client portion of Kabbage code test utilizing Node, Hapi, React and Redux to build an app displaying pictures of various dog breeds, as well as the current temperature in a given ZIP Code.",
+  "main": "App.js",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "6.22.0",
+    "css-loader": "^0.26.1",
+    "html-webpack-plugin": "^2.28.0",
+    "rimraf": "2.6.2",
+    "style-loader": "^0.13.1",
+    "stylus": "0.54.5",
+    "stylus-loader": "3.0.1",
+    "webpack": "2.2.0-rc.0",
+    "webpack-dev-server": "2.2.0-rc.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && webpack -p",
+    "clean": "rimraf dist/",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samreaves/kabbage-doge.git"
+  },
+  "author": "Sam Reaves <thesamreaves@gmail.com> (http://www.github.com/samreaves)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samreaves/kabbage-doge/issues"
+  },
+  "homepage": "https://github.com/samreaves/kabbage-doge#readme"
+}
