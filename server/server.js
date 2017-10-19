@@ -24,7 +24,11 @@ server.register({
     throw inertDependencyInjectionError;
   }
 
-  /* Server presentation layer public assets from client folder */
+  /* Import and use API route configuration */
+  const APIRoutes = require('./routes');
+  server.route(APIRoutes);
+
+  /* Serve presentation layer public assets from client folder */
   server.route({
     method: 'GET',
     path: '/{param*}',
@@ -37,11 +41,17 @@ server.register({
   });
 });
 
-/* Start server */
-server.start((serverStartError) => {
-  if (serverStartError) {
-    throw serverStartError;
-  }
+/* If module is not required by the test environment */
+if (!module.parent) {
 
-  console.log(`server started at: ${server.info.uri}`);
-});
+  /* Start server */
+  server.start((serverStartError) => {
+    if (serverStartError) {
+      throw serverStartError;
+    }
+
+    console.log(`server started at: ${server.info.uri}`);
+  });
+}
+
+module.exports = server;
