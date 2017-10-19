@@ -1,6 +1,6 @@
 /**
  * Kabbage Doge Server
- * Temperature Endpoint Test
+ * Temperature Endpoint Tests
  * Written by Sam Reaves
  * October 18, 2017
  * https://github.com/samreaves/kabbage-doge

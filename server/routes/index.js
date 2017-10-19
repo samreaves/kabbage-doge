@@ -7,7 +7,8 @@
  */
 
 const temperatureRoute = require('./temperature');
+const breedsRoutes = require('./breeds');
 
-const Routes = [temperatureRoute];
+const Routes = [temperatureRoute, ...breedsRoutes];
 
 module.exports = Routes;
