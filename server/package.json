@@ -1,0 +1,25 @@
+{
+  "name": "kabbage-doge-server",
+  "version": "1.0.0",
+  "description": "API portion of Kabbage code test utilizing Node and Hapi to offer an API interface serving pictures of various dog breeds, as well as the current temperature in a given ZIP Code.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "prestart": "npm install"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samreaves/kabbage-doge.git"
+  },
+  "author": "Sam Reaves <thesamreaves@gmail.com> (http://www.github.com/samreaves)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samreaves/kabbage-doge/issues"
+  },
+  "homepage": "https://github.com/samreaves/kabbage-doge#readme",
+  "dependencies": {
+    "hapi": "16.6.2",
+    "inert": "4.2.1"
+  }
+}
