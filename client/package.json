@@ -24,8 +24,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "build": "npm run clean && webpack -p",
+    "prebuild": "npm install",
+
     "clean": "rimraf dist/",
+
+    "predev": "npm install",
     "dev": "webpack-dev-server"
   },
   "repository": {
