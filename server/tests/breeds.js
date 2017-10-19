@@ -1,6 +1,6 @@
 /**
  * Kabbage Doge Server
- * Breeds Endpoint Test
+ * Breeds Endpoints Tests
  * Written by Sam Reaves
  * October 18, 2017
  * https://github.com/samreaves/kabbage-doge

@@ -1,6 +1,6 @@
 /**
  * Kabbage Doge Server
- * Temperature Endpoint
+ * Breeds Endpoints
  * Written by Sam Reaves
  * October 18, 2017
  * https://github.com/samreaves/kabbage-doge

@@ -1,6 +1,6 @@
 /**
  * Kabbage Doge Server
- * Temperature Endpoint Test
+ * Temperature Endpoint Tests
  * Written by Sam Reaves
  * October 18, 2017
  * https://github.com/samreaves/kabbage-doge
@@ -26,10 +26,7 @@ test('Temperature endpoint | when passed String zipcode with 5 digits | responds
       /* Assertions */
       t.is(response.statusCode, 200, 'replies with 200 status');
       t.is(response.headers['content-type'], 'application/json; charset=utf-8', 'replies with application/json content-type');
-      t.true(
-        payload.hasOwnProperty('temperature') &&
-        (typeof payload.temperature === 'number')
-      );
+      t.true(payload.hasOwnProperty('temperature') && (typeof payload.temperature === 'number'));
     });
 });
 
@@ -49,10 +46,6 @@ test('Temperature endpoint | when passed String zipcode with 4 digits | responds
       /* Assertions */
       t.is(response.statusCode, 400, 'replies with 400 status');
       t.is(response.headers['content-type'], 'application/json; charset=utf-8', 'replies with application/json content-type');
-      t.true(
-        payload.hasOwnProperty('error') &&
-        payload.hasOwnProperty('message') &&
-        payload.message === 'child "zipcode" fails because ["zipcode" length must be 5 characters long]'
-      );
+      t.true(payload.hasOwnProperty('error') && payload.hasOwnProperty('message') && payload.message === 'child "zipcode" fails because ["zipcode" length must be 5 characters long]');
     });
 });
