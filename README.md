@@ -5,8 +5,8 @@ Kabbage code test serving images of different dog breeds, and the current temper
 
 
 ## Dependencies
-Node 6.2.1
-NPM 4.2
+- Node 6.2.1
+- NPM 4.2
 
 
 
