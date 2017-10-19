@@ -37,11 +37,17 @@ server.register({
   });
 });
 
-/* Start server */
-server.start((serverStartError) => {
-  if (serverStartError) {
-    throw serverStartError;
-  }
+/* If module is not required by the test environment */
+if (!module.parent) {
 
-  console.log(`server started at: ${server.info.uri}`);
-});
+  /* Start server */
+  server.start((serverStartError) => {
+    if (serverStartError) {
+      throw serverStartError;
+    }
+
+    console.log(`server started at: ${server.info.uri}`);
+  });
+}
+
+module.exports = server;

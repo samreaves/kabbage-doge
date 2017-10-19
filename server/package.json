@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "prestart": "npm install"
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install",
+    "test": "ava --verbose tests/*.js",
+    "pretest": "npm install"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "dependencies": {
     "hapi": "16.6.2",
     "inert": "4.2.1"
+  },
+  "devDependencies": {
+    "ava": "0.22.0"
   }
 }
