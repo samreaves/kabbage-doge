@@ -8,14 +8,18 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Home/Home';
+import Header from './Header/Header';
+import BreedsList from "./BreedsList/BreedsList";
 import './App.styl';
 
 class App extends Component {
 
   render() {
     return (
-        <Home />
+      <div className="container">
+        <Header />
+        <BreedsList />
+      </div>
     );
   }
 }

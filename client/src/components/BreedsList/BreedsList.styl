@@ -1,0 +1,38 @@
+/**
+ * Kabbage Doge Client
+ * BreedsList Component Styles
+ * Written by Sam Reaves
+ * October 18, 2017
+ * https://github.com/samreaves/kabbage-doge
+ */
+
+
+/**
+ * BreedsList Component Stylus Constants
+ * Fonts
+ */
+$roboto-slab = 'Roboto Slab', serif
+$kabbage-green = #56C271
+
+
+/* Header Component Styles */
+.breeds-list
+  height: calc(100vh - 200px - 40px)
+  overflow-y: scroll
+  position: relative
+  width: 15%;
+  > ul
+    margin: 0
+    padding: 0
+    > li
+      font-family: $roboto-slab
+      font-size: 20px
+      list-style-type: none
+      padding: 10px 20px
+      text-align: left
+    > li:first-child
+      margin-top: 0
+      padding-top: 10px
+    > li.selected
+      background: $kabbage-green
+      color: #000
